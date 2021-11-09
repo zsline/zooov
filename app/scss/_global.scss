@@ -1,0 +1,53 @@
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+}
+h1{
+  font-family: Oswald;
+font-weight: 700;
+font-size: 54px;
+line-height: 130%;
+letter-spacing: 0.02em;
+}
+h6{
+font-family: Montserrat;
+font-weight: 400;
+font-size: 20px;
+line-height: 140%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  // min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.red-btn{
+  padding: 13px 42px;
+  background-color: $red;
+  border-radius: 8px;
+  display: inline-block;
+  transition: all .3s;
+  &:hover{
+    background-color: $dred;
+  }
+}
