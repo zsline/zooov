@@ -51,7 +51,7 @@
         bottom: 0;
         width: 0;
         height: 3px;
-        background-color: $red; 
+        background-color: $red;
         content: "";
         transition: width 0.3s ease-out;
       }
@@ -77,22 +77,22 @@
   margin: 180px 0 80px;
   &__inner {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
   }
   p {
-padding: 32px 0 18px;
+    padding: 32px 0 18px;
   }
-  ul{
+  ul {
     margin-top: 16px;
   }
-  li{
-    margin-bottom: 12px;  
+  li {
+    margin-bottom: 12px;
     padding-left: 12px;
     position: relative;
-    &::after{
+    &::after {
       position: absolute;
-      content: '';
+      content: "";
       width: 6px;
       height: 6px;
       border-radius: 50%;
@@ -106,7 +106,85 @@ padding: 32px 0 18px;
     max-width: 588px;
     height: 523px;
   }
-  &__offer{
+  &__offer {
     padding-right: 50px;
+  }
+}
+.procent {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 80px;
+    background-color: $bgl;
+    height: 288px;
+    &-wrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 70px;
+      margin-top: 18px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    img {
+      min-width: 32px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+  }
+}
+.diet {
+  margin-top: 180px;
+  &__top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 74px;
+    img{
+      position: absolute;
+      top: -10px;
+      left: 175px;
+      z-index: -1;
+    }
+    p{
+      max-width: 777px;
+    }
+  }
+  &__cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+  &__card{
+    max-width: 280px;
+    h4{
+      margin: 45px 0 4px;
+    }
+    p{
+      margin: 16px 0 14px;
+    }
+    a{
+      margin-top: 24px;
+    }
+    img{
+      width: 280px;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__link{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background: #EAD1D0;
+    a{
+      margin: 0 70px 0 150px;
+    }
   }
 }

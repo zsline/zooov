@@ -12,9 +12,8 @@ ul[class],
 ol[class] {
   padding: 0;
 }
-ul{
+ul {
   padding-inline-start: 0px;
-
 }
 body,
 h1,
@@ -55,4 +54,5 @@ select {
 a {
   text-decoration: none;
   color: inherit;
+  box-sizing: border-box;
 }

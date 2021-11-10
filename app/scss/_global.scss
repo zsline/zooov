@@ -10,26 +10,52 @@ body {
   line-height: 140%;
   color: #000000;
 }
-h1{
+h1 {
   font-family: Oswald;
-font-weight: 700;
-font-size: 54px;
-line-height: 130%;
-letter-spacing: 0.02em;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
 }
-h6{
-font-family: Montserrat;
-font-weight: 400;
-font-size: 20px;
-line-height: 140%;
+h2 {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+}
+h3 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+}
+h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+}
+h5 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 200%;
+  text-transform: uppercase;
+}
+h6 {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
   // min-height: 100%;
 }
-img{
-    object-fit: cover
+img {
+  object-fit: cover;
 }
 .main {
   flex: 1 0 auto;
@@ -43,13 +69,33 @@ img{
   margin: 0 auto;
   padding: 0 15px;
 }
-.red-btn{
+.red-btn {
   padding: 13px 42px;
   background-color: $red;
   border-radius: 8px;
   display: inline-block;
-  transition: all .3s;
-  &:hover{
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.3s;
+  &:hover {
     background-color: $dred;
   }
+}
+.w-btn {
+  padding: 13px 42px;
+  color: #961914;
+  border: 1px solid #961914;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: 600;
+  transition: all 0.3s;
+  &:hover {
+    background-color: #ead1d0;
+    border: 1px solid #ead1d0;
+  }
+}
+.crabs {
+  font-size: 13px;
+  line-height: 130%;
+  color: #9f9e9d;
 }
