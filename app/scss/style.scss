@@ -1,5 +1,4 @@
 @import "vars";
-@import "fonts";
 @import "reset";
 @import "libs";
 @import "global";
@@ -199,7 +198,7 @@
       left: 290px;
       top: -14px;
     }
-    & .rey-right{
+    & .rey-right {
       position: absolute;
       right: 265px;
       top: 34px;
@@ -214,5 +213,45 @@
     p {
       margin-top: 8px;
     }
+  }
+}
+.love {
+  padding: 80px 0;
+  background: #ead1d0;
+  &__img {
+    position: relative;
+    width: 50%;
+    height: 740px;
+    display: inline-block;
+    &-top{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+    &-but{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 3;
+    }
+  }
+  &__inner{
+    display: flex;
+    align-items: center;
+  }
+  &__info{
+    width: 48%;
+    padding-left: 50px;
+    position: relative;
+    .rey-left{
+      position: absolute;
+      top: 44px;
+      right: 70px;
+    }
+  }
+  h2{
+    max-width: 442px;
+    margin-bottom: 40px;
   }
 }
